@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect ,useState } from 'react'
 import { Container, Title, Slogan } from './styles'
 import { GoogleSignin } from '@react-native-google-signin/google-signin'
 import { Realm, useApp } from '@realm/react'
@@ -18,6 +18,10 @@ GoogleSignin.configure({
 export function SignIn() {
   const [isAutenticating, setIsAuthenticanting] = useState(false)
   const app = useApp()
+
+  useEffect(() => {
+    GoogleSignin.signOut()
+  }, [])
 
   async function handleGoogleSignIn() {
     try {
