@@ -15,6 +15,7 @@ import { Routes } from './src/routes'
 import { RealmProvider } from './src/libs/realm';
 import { SignIn } from './src/screens/SignIn'
 import { Loading } from './src/components/Loading'
+import { Flame } from 'phosphor-react-native'
 
 
 export default function App() {
@@ -28,7 +29,7 @@ export default function App() {
     
     <AppProvider id={REALM_APP_ID}>
       <ThemeProvider theme={theme}>
-      <SafeAreaProvider>
+      <SafeAreaProvider style={{flex:1, backgroundColor: theme.COLORS.GRAY_800 }}>
         <StatusBar
           barStyle="light-content"
           backgroundColor="transparent"
