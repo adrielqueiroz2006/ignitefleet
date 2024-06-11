@@ -1,10 +1,13 @@
 import styled from 'styled-components/native'
-import { Image } from 'expo-image'
+
 
 export const Container = styled.View`
   width: 100%;
+  height: 150px;
+
   padding: 16px;
   border-radius: 6px;
+  
   background-color: ${({ theme }) => theme.COLORS.GRAY_700};
 `;
 
@@ -16,9 +19,9 @@ export const Label = styled.Text`
 
 export const Input = styled.TextInput`
   color: ${({ theme }) => theme.COLORS.GRAY_200};
-  font-size: ${({ theme }) => theme.FONT_SIZE.XXXL}px;
-  font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
+  font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
+  font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
 
-  text-align: center;
-  maargin-top: 16px;
+  vertical-align: top;
+  margin-top: 16px;
 `;
