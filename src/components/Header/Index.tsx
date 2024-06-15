@@ -4,6 +4,7 @@ import { Container } from "./style";
 import { useTheme } from "styled-components";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
+import React from "react";
 
 type Props = {
     title: string;

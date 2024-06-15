@@ -8,6 +8,7 @@ import { Button } from '../../components/Button'
 
 import { WEB_CLIENT_ID, IOS_CLIENT_ID } from '@env'
 import { Alert } from 'react-native'
+import React from 'react'
 
 GoogleSignin.configure({
   scopes: ['email', 'profile'],

@@ -7,6 +7,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import { Container, Greeting, Message, Name, Picture } from './styles';
 
 import theme from '../../theme';
+import React from 'react';
 
 export function HomeHeader() {
   const user = useUser();

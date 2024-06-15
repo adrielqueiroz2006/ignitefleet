@@ -16,6 +16,7 @@ import { RealmProvider } from './src/libs/realm';
 import { SignIn } from './src/screens/SignIn'
 import { Loading } from './src/components/Loading'
 import { Flame } from 'phosphor-react-native'
+import React from 'react'
 
 
 export default function App() {

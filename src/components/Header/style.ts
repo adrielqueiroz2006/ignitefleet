@@ -8,7 +8,7 @@ export const Container =styled.View`
     flex-direction: Rows;
     justify-Content: space-between;
 
-    backgroun-color: ${({theme}) => theme.COLORS.GRAY_700}
+    background-color: ${({theme}) => theme.COLORS.GRAY_700}
 `;
 
 export const Title = styled.Text`
