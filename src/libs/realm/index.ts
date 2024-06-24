@@ -10,3 +10,6 @@ export const{
 } = createRealmContext({
     schema: [Historic]
 });
+
+export { Historic };
+
